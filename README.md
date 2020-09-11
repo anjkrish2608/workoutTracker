@@ -2,7 +2,7 @@
 
 [Click here to view repository.](https://github.com/anjkrish2608/woroutTracker)
 
-[Click here .]()
+[Click here.]()
 
 ## Table of Contents
 
@@ -19,28 +19,41 @@
 <a id="des"></a>
 
 ## Description of Application
-
+This application creates a database in which a user can store information on their workouts. The user can create a new excercise and add it to a workout and view statistics created based on their past entries.
+Unfortunately I was unable to complete this application to function correctly, at the moment the application can create a database and display the main page.
 
 <a id="tech"></a>
 
 ## Technologies Used
 While creating this application I have used many different technologies listed below:
-
+* JavaScript ES6 : to write the code in server.js, html-routes and api-routes
+* Node JS : to run the server.js file
+* Path Package : to link the output html files
+* Express Package : to run the routes and manipulate the data
+* Mongoose Package : to create and link to a database on MongoDB
 
 <a id="chall"></a>
 
 ## Challenges Faced
-
+In this homework I faced many challenges in particular time management. I was unable to complete this task on time and I will try to enable the other required features in the future.
 
 <a id="dev"></a>
 
 ## Features to be Implemented
-
+In the future I will complete the routes to ensure they function correctly. 
 
 <a id="insta"></a>
 
 ## Installation Steps
-
+1. Download the workoutTracker folder from the repository.
+2. Run the terminal in that folder and write the following commands:
+```
+mongod
+npm install
+npm run seed 
+npm start
+```
+4. Then nativatge to [http://localhost:3000](http://localhost:3000)
 
 <a id="tests"></a>
 
@@ -50,6 +63,7 @@ There are currently no tests for this application.
 <a id="use"></a>
 
 ## How to Use
+After following the installation steps you wil be brought to the main page where you can add new excercises to an old workout or a new one. Have fun!
 
 <a id="lic"></a>
 
@@ -80,7 +94,12 @@ SOFTWARE.
 <a id="cred"></a>
 
 ## Credits
-
+As mentioned in [Technologies Used](#tech) the following assets were used:
+* [JavaScript ES6](https://www.javascript.com/)
+* [Node JS](https://nodejs.org/en/)
+* [Path Package](https://www.npmjs.com/package/inquirer)
+* [Express Package](https://www.npmjs.com/package/express)
+* [Mongoose Package](https://www.npmjs.com/package/mongoose)
 Furthermore the requirements set for this application were supplied by Trilogy Education Services.
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
