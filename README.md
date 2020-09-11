@@ -2,7 +2,7 @@
 
 [Click here to view repository.](https://github.com/anjkrish2608/woroutTracker)
 
-[Click here.]()
+[Click here to view on Heroku.](https://lit-spire-50857.herokuapp.com/)
 
 ## Table of Contents
 
@@ -63,7 +63,7 @@ There are currently no tests for this application.
 <a id="use"></a>
 
 ## How to Use
-After following the installation steps you wil be brought to the main page where you can add new excercises to an old workout or a new one. Have fun!
+After following the installation steps you wil be brought to the main page where you can add new excercises to an old workout or a new one. Alternatively you can access the application on Heroku [here](https://lit-spire-50857.herokuapp.com/}.Have fun!
 
 <a id="lic"></a>
 
