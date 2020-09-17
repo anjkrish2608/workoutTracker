@@ -1,0 +1,8 @@
+get /api/workouts/range
+get /api/workouts
+put /api/workouts/:id
+post /api/workouts
+
+get /stats - stats.html
+get / - index.html
+get /exercise - exercise.html

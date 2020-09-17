@@ -4,13 +4,12 @@ const Workout = require("../models/workout.js");
 
 //get all workouts
 router.get("/api/workouts", (req, res) => {
-  Workout.find({})
-    .sort({ date: -1 })
+  Workout.find()
     .then(dbWorkout => {
       res.json(dbWorkout);
     })
     .catch(err => {
-      res.status(400).json(err);
+      res.json(err);
     });
 });
 
@@ -26,7 +25,7 @@ router.post("/api/exercise", ({ body }, res) => {
     });
 });
 
-router.post("/api/workout/:id", ({ body }, res) => {
+router.put("/api/workout/:id", ({ body }, res) => {
   Workout.update({
     _id:mongojs.ObjectId(req.params.id)
   },{
