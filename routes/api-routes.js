@@ -13,9 +13,26 @@ router.get("/api/workouts", (req, res) => {
     });
 });
 
-// post excercise
-router.post("/api/exercise", ({ body }, res) => {
-  Workout.create(body)
+// get workouts in range 
+router.get("/api/workouts/range", ({ body }, res) => {
+  Workout.find({}).limit(7)
+    .then(dbWorkouts => {
+      res.json(dbWorkouts);
+    })
+    .catch(err => {
+      res.json(err);
+    });
+});
+
+//edit workout
+router.put("/api/workouts/:id", ({ body }, res) => {
+  Workout.update({
+    _id:mongojs.ObjectId(req.params.id)
+  },{
+    $set:{
+      
+    }
+  })
     .then(dbWorkout => {
       console.log(dbWorkout);
       res.json(dbWorkout);
@@ -25,14 +42,9 @@ router.post("/api/exercise", ({ body }, res) => {
     });
 });
 
-router.put("/api/workout/:id", ({ body }, res) => {
-  Workout.update({
-    _id:mongojs.ObjectId(req.params.id)
-  },{
-    $set:{
-      
-    }
-  })
+// post workout
+router.post("/api/workouts", ({ body }, res) => {
+  Workout.create(body)
     .then(dbWorkout => {
       console.log(dbWorkout);
       res.json(dbWorkout);
